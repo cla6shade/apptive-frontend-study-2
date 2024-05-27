@@ -1,0 +1,124 @@
+.profile {
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+.profile .profile__box {
+    width: 45%;
+    height: 270px;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .profile__box .profile__box__header {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    flex-shrink: 0;
+}
+.profile .profile__box .profile__box__header > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+.profile .profile__box__header .profile__image {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: #fafafa 3px solid;
+    background-color: #d9d9d9;
+}
+.profile .profile__box__header .profile__image > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile .profile__box__header .profile__image .status_badge {
+    position: absolute;
+    background-color: #d9d9d9;
+    border: #fafafa 3px solid;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
+}
+.profile .profile__box__header .profile__image .status_badge.status_badge--online {
+    background-color: #00ff00;
+}
+.profile .profile__box__header .profile__image .status_badge.status_badge--offline {
+    background-color: #d9d9d9;
+}
+.profile .profile__box__header .profile__image .status_badge.status_badge--do_not_disturb {
+    background-color: #f30000;
+}
+.profile .profile__box__header .profile__image .status_badge.status_badge--away {
+    background-color: #ff9900;
+}
+.profile .profile__skeleton {
+
+}
+.profile .profile__box.profile__skeleton .profile__box__header {
+    background-color: #d9d9d9;
+}
+.profile .profile__box.profile__skeleton .profile__box__header .profile__image {
+    background-color: #d9d9d9;
+}
+
+.profile .profile__box__content {
+    flex-grow: 1;
+    padding: 60px 40px 40px 25px;
+    position: relative;
+}
+
+.profile .profile__box__content .profile__job {
+    right: 20px;
+    top: 43px;
+    position: absolute;
+    font-size: 13px;
+    display: flex;
+    line-height: 25px;
+    height: 25px;
+    gap: 5px;
+}
+
+.profile .profile__box__content h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.profile .profile__box__content .profile__id {
+    margin-top: 12px;
+    font-size: 13px;
+}
+.profile .profile__box__content .profile__bio {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+@media (max-width: 1170px) {
+    .profile .profile__box {
+        height: 290px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .profile .profile__box {
+        height: 350px;
+    }
+}
